@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sản phẩm"
+        android:textSize="30dp"
+        android:layout_gravity="center"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view"
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add"/>
+</LinearLayout>
